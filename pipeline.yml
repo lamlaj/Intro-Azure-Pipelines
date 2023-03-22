@@ -1,6 +1,3 @@
-pool: 
-  vmImage: 'windows-latest'
-
 container: 'mcr.microsoft.com/dotnet/sdk:6.0'
 
 stages:
@@ -9,6 +6,8 @@ stages:
   jobs:
   - job: build
     displayName: Build
+    pool: 
+      vmImage: 'windows-latest'
     steps:
     - script: dotnet --version
       displayName: 'Check .Net version'
