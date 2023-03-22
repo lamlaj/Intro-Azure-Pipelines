@@ -1,16 +1,16 @@
 stages:
 - stage: continuous_integration
-  displayName: Continuous Integration
+  displayName: 'Continuous Integration'
   jobs:
   - job: build
     displayName: Build
     steps:
     - script: dotnet --version
-      displayName: Check .Net version
+      displayName: 'Check .Net version'
     - script: dotnet restore
-      displayName: Restore Nuget packages
+      displayName: 'Restore Nuget packages'
     - script: dotnet build
-      displayName: Build .Net Project
+      displayName: 'Build .Net Project'
       displayName: 
     - script: dotnet run
-      displayName: Run .NET Project
+      displayName: 'Run .NET Project'
