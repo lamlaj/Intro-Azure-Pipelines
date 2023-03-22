@@ -11,6 +11,5 @@ stages:
       displayName: 'Restore Nuget packages'
     - script: dotnet build
       displayName: 'Build .Net Project'
-      displayName: 
     - script: dotnet run
       displayName: 'Run .NET Project'
